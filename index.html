@@ -36,21 +36,14 @@
         <button class="botoes" id="reset">Reset</button>
     </div>
 
-    <div id="circulo1"> </div>
-
-    <div id="circulo2"> </div>
-
-    <div id="circulo3"> </div>
-
+    
     <script>
         let btnStart = document.getElementById("start")
         let btnStop = document.getElementById("stop")
         let btnReset = document.getElementById("reset")
 
 
-        let vermelho = document.getElementById("circulo1")
-        let amarelo = document.getElementById("circulo2")
-        let verde = document.getElementById("circulo3")
+       
 
 
 
@@ -115,19 +108,7 @@
 
             }, 10);
 
-            if (ms == 50) {
-                vermelho.classList.add("animacao")
-
-            }
-
-
-
-
-
-
-
-
-
+           
 
         }
 
@@ -158,13 +139,7 @@
             btnStart.classList.remove("ativo")
             btnReset.classList.remove("ativo")
 
-
-            vermelho.classList.remove("animacao")
-            amarelo.classList.remove("animacao")
-
-
-
-
+           
             atualizaValor()
         }
 
